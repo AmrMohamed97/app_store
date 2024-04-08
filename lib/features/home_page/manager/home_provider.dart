@@ -45,9 +45,7 @@ class HomeProvider with ChangeNotifier {
         image: imageController.text,
         title: productNameController.text,
       );
-      log('===================success===============');
-      log(editedProduct!.title);
-      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text(
           'Product updated Successfully',
           textAlign: TextAlign.center,
@@ -61,8 +59,7 @@ class HomeProvider with ChangeNotifier {
       Navigator.pushNamed(context, '/');
       notifyListeners();
     } catch (error) {
-      log('===================error===============');
-      log(error.toString());
+
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text(
           'error',
@@ -90,8 +87,7 @@ class HomeProvider with ChangeNotifier {
       newProductPriceController.clear();
       categoryController.clear();
       newImageController.clear();
-      log('===================success===============');
-      log(editedProduct!.image);
+
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text(
           'Product add Successfully',

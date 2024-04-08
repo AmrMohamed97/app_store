@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:store_app/core/widget/custom_button.dart';
 import 'package:store_app/core/widget/custom_text_form_field.dart';
-import 'package:store_app/features/home_page/presentation/manager/home_provider.dart';
+import 'package:store_app/features/home_page/manager/home_provider.dart';
 
 class AddProduct extends StatelessWidget {
   const AddProduct({super.key});
@@ -60,8 +60,7 @@ class AddProduct extends StatelessWidget {
             const SizedBox(
               height: 60,
             ),
-            const Spacer(flex: 1),
-            CustomButton(
+             CustomButton(
               onTab: () {
                 Provider.of<HomeProvider>(context, listen: false)
                     .addProductToStore(context: context);
@@ -69,8 +68,7 @@ class AddProduct extends StatelessWidget {
               label: 'Add Product',
               color: Colors.blue,
             ),
-            const Spacer(flex: 4),
-          ],
+           ],
         ),
       ),
     );

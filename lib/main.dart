@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:store_app/features/add_product/presentation/pages/add_product.dart';
-import 'package:store_app/features/home_page/presentation/manager/home_provider.dart';
-import 'package:store_app/features/home_page/presentation/pages/home_page.dart';
-import 'package:store_app/features/update_product/presentation/pages/update_product.dart';
+import 'package:store_app/features/home_page/manager/home_provider.dart';
+import 'package:store_app/features/home_page/pages/home_page.dart';
+
+import 'features/add_product/pages/add_product.dart';
+import 'features/update_product/pages/update_product.dart';
 
 void main() {
   runApp(const StoreApp());

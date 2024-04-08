@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:store_app/core/models/product_model.dart';
 import 'package:store_app/core/widget/custom_button.dart';
 import 'package:store_app/core/widget/custom_text_form_field.dart';
-import 'package:store_app/features/home_page/presentation/manager/home_provider.dart';
+import 'package:store_app/features/home_page/manager/home_provider.dart';
 
 class UpdateProduct extends StatelessWidget {
   const UpdateProduct({super.key});
@@ -69,8 +69,7 @@ class UpdateProduct extends StatelessWidget {
             const SizedBox(
               height: 60,
             ),
-            const Spacer(flex: 1),
-            CustomButton(
+             CustomButton(
               onTab: () {
                 Provider.of<HomeProvider>(context, listen: false).updateProduct(
                   context: context,

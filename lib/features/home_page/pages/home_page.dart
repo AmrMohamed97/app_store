@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:store_app/features/add_product/presentation/pages/add_product.dart';
-import 'package:store_app/features/home_page/presentation/manager/home_provider.dart';
-import 'package:store_app/features/home_page/presentation/pages/widgets/home_body.dart';
+import 'package:store_app/features/add_product/pages/add_product.dart';
+import 'package:store_app/features/home_page/manager/home_provider.dart';
+import 'package:store_app/features/home_page/pages/widgets/home_body.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

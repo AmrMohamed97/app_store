@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:store_app/core/models/product_model.dart';
-import 'package:store_app/features/update_product/presentation/pages/update_product.dart';
+import 'package:store_app/features/update_product/pages/update_product.dart';
 
 class CartItem extends StatelessWidget {
   const CartItem({required this.model, super.key});
