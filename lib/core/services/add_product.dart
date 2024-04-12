@@ -9,7 +9,7 @@ class AddProductService {
       required String category,
       required String image}) async {
     Map<String, dynamic> data =
-        await Api().post(url: 'https://fakestoreapi.com/products', body: {
+        await Api().post(url: 'https://fakestoreapi.com/products',body: {
       'title': title,
       'description': description,
       'price': price,
